@@ -6,6 +6,6 @@
  * Time: 12:03 PM
  */
 print("What is your name?");
-$name = fgets(StDIN);
-print("Hello" . $name);
+$name = fgets(STDIN);
+print("Hello" . " " . $name);
 ?>
