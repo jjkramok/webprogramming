@@ -10,7 +10,7 @@ print("Who types? Me, you or he\n");
 $person = trim(fgets(STDIN));
 $birthday = "16 April";
 print ($person);
-if (…) {
+if ($person ) {
     print (…);
 } else {
     if (…) {
