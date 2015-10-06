@@ -13,11 +13,15 @@
  * Time: 12:44 PM
  */
 
+define('AMOUNT_OF_DOTS', 50);
 
 function printChapter($chapter_title, $page_number) {
-    $AMOUNT_OF_DOTS = 50;
-    $dots = str_repeat(".", $AMOUNT_OF_DOTS - strlen($chapter_title));
+    $dots = str_repeat(".", calculate($chapter_title, $page_number));
     print($chapter_title . $dots . $page_number . "<br>");
+}
+
+function calculate($chapter, $page) {
+    return AMOUNT_OF_DOTS - strlen($chapter) - strlen($page);
 }
 
 $hoofdstukken = array(
